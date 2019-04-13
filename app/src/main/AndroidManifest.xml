@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.mehrezapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Acceuil"
+            android:label="@string/title_activity_acceuil"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="my.mehrezapplication.Acceuil" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewAllEmployee"
+            android:parentActivityName=".Acceuil">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.mehrezapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AjoutEmploye"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".AjoutArticle"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".BonRetour"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".ClotureCaisse"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".ConsultationStock"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".FactureVente"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".BonCommande"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".ListeBonRetour"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".ListeFactureVente"
+            android:parentActivityName=".Acceuil" />
+        <activity
+            android:name=".AjoutStock"
+            android:parentActivityName=".Acceuil" />
+        <activity android:name=".ViewEmploye" />
+        <activity android:name=".ViewAllArticle" />
+        <activity android:name=".ViewArticle" />
+
+        <activity android:name=".Affecter" />
+        <activity android:name=".Heure" />
+        <activity android:name=".ViewHeure" />
+        <activity android:name=".Deco"></activity>
+    </application>
+
+</manifest>
